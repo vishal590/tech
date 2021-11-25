@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--color-bg);
+}
+
+a{
+  text-decoration: unset;
+}
+
+--gradient-bg{
+    background:-moz-radial-gradient(circle at 82% 59%, rgba(0, 150, 212, 1) 0%, rgba(0, 255, 200, 1) 61%, rgba(0, 150, 255, 1) 100%);
+
+    background:-webkit-radial-gradient(circle at 82% 59%, rgba(0, 150, 212, 1) 0%, rgba(0, 255, 200, 1) 61%, rgba(0, 150, 255, 1) 100%);
+
+    background:-o-radial-gradient(circle at 82% 59%, rgba(0, 150, 212, 1) 0%, rgba(0, 255, 200, 1) 61%, rgba(0, 150, 255, 1) 100%);
+
+    background:-ms-radial-gradient(circle at 82% 59%, rgba(0, 150, 212, 1) 0%, rgba(0, 255, 200, 1) 61%, rgba(0, 188, 255, 1) 100%);
+
+    background:radial-gradient(circle at 82% 59%, rgba(0, 150, 212, 1) 0%, rgba(0, 255, 244, 1) 61%, rgba(0, 150, 255, 1) 100%);
+}
+ 
+.gradient_text{
+    background: var(--gradient-text);
+    background-clip:text;
+}
+
+.gradient___bg{
+  background: var(--gradient-bar);
+}
+
+.section_padding{
+    padding: 4rem 6rem;
+}
+
+.section_margin{
+    margin: 4rem 6rem;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .section_padding{
+      padding: 4rem;
+  }
+  
+  .section_margin{
+      margin: 4rem;
+  }
+  }
+
+  @media screen and (max-width: 550px) {
+    .section_padding{
+      padding: 4rem;
+  }
+  
+  .section_margin{
+      margin: 4rem;
+  }
+  }
+
+  
